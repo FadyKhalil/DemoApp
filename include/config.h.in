@@ -1,0 +1,7 @@
+// config.h.in
+
+#define START @START@
+#define PRINT_ID_2 @PRINT_ID_2@
+#define SIZE_LOOP @SIZE_LOOP@
+#define INPUT_1 @INPUT_1@
+#define INPUT_2 @INPUT_2@
