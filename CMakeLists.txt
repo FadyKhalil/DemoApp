@@ -6,11 +6,35 @@ project(calculator
 
 add_executable(${PROJECT_NAME} main.cpp)
 
-set(START 2)
-set(PRINT_ID_2 1)
-set(SIZE_LOOP 100000U)
-set(INPUT_1 2U)
-set(INPUT_2 3U)
+if(${START_VALUE})
+        set(START "${START_VALUE}U")
+else()
+        set(START 0)
+endif()
+
+if(${PRINT_VALUE})
+        set(PRINT_ID_2 "${PRINT_VALUE}U")
+else()
+        set(PRINT_ID_2 1)
+endif()
+
+if(${SIZE_VALUE})
+        set(SIZE_LOOP "${SIZE_VALUE}U")
+else()
+        set(SIZE_LOOP 100000U)
+endif()
+
+if(${INPUT_1_VALUE})
+        set(INPUT_1 "${INPUT_1_VALUE}U")
+else()
+        set(INPUT_1 5U)
+endif()
+
+if(${INPUT_2_VALUE})
+        set(INPUT_2 "${INPUT_2_VALUE}U")
+else()
+        set(INPUT_2 10U)
+endif()
 
 
 # Configure the header file

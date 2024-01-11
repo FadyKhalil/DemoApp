@@ -17,7 +17,7 @@ void function_Calc(void)
         result += Calc.add(INPUT_1, INPUT_2);
     }
 
-    std::cout << "result 1 =  " << result << std::endl;
+    std::cout << "the result after the patch 1 =  " << result << std::endl;
 }
 
 void function_Enh(void)
@@ -30,7 +30,7 @@ void function_Enh(void)
         result += enhance.modulos(INPUT_1, INPUT_2);
     }
 
-    std::cout << "result 2 =" << result << std::endl;
+    std::cout << "the result after the patch 2 =" << result << std::endl;
 }
 
 
@@ -54,9 +54,9 @@ int main(void)
 #endif
 
 
-    std::cout << "id thread 1 = " << id1 << 
+    std::cout << "id thread for 1 = " << id1 << 
 #if (PRINT_ID_2 == 1)
-    " id thread 2 = " << id2 << std::endl;
+    " id thread for 2 = " << id2 << std::endl;
 #else
     std::endl;
 #endif
